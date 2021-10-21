@@ -6,6 +6,7 @@ if __name__ == '__main__':
     data_path = 'data'
 
     data = pd.read_csv('SPSC.csv')
+    data['sentence'] = data['sentence'].astype('str')
     data['label'] = data['label'].astype('category')
     data.info()
 
