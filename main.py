@@ -42,8 +42,6 @@ MODEL, LABELS = read_model(MODEL_DIR)
 def predict(input_file_path: str) -> List[str]:
     file_content = read_json_file(input_file_path)
     df = pd.DataFrame(file_content)
-    for s in df['sentence']:
-        print(s)
-    prediction = MODEL.predict(df, batch_size=BATCH_SIZE).tolist()
+    prediction = MODEL.predict(df, batch_size=BATCH_SIZE, device=DEVICE).tolist()
     predicted_labels = [LABELS[p] for p in prediction]
     return predicted_labels
