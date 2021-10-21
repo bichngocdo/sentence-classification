@@ -19,7 +19,7 @@ Due to time limit, I can only run two experiments:
 The features are extracted using the script [prepare_data.py](../prepare_data.py).
 
 Both experiments are performed on the *same* data split. Using extended features (experiment 2) results in higher macro
-F1 on the test set (~**69**%). The experiment details, model hyperparameters and training progress can be seen in the
+F1 on the test set (~**69**%). The experiment details, model hyperparameters, training progress and *detailed results* can be seen in the
 corresponding notebooks.
 
 I configured to train two models with 1 epoch, but manually stopped training after ~7.000 iterations due to no
