@@ -13,7 +13,8 @@ logger = logging.getLogger(__name__)
 
 class SentenceClassificationSystem(object):
     """
-    This class wrap outside a sentence classification model to provide the functionality of the model.
+    The ``SentenceClassificationSystem`` class wraps outside a sentence classification model
+    to provide the functionality of the model.
     """
     def __init__(
             self,

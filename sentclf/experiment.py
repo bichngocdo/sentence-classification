@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 
 class Experiment(object):
     """
-    The class to perform experiments with sentence classification models.
+    The ``Experiment`` class helps to perform experiments with sentence classification models.
     It reads the configuration file, initializes components
     (data loaders, model, optimizer, criterion, metric, trainer),
     provides methods to perform training and evaluation.

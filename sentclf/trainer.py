@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 class Trainer(object):
     """
-    This class performs the training process of sentence classification models.
+    This ``Trainer`` class performs the training process of sentence classification models.
     """
 
     def __init__(
