@@ -1,0 +1,30 @@
+{
+  "dataset": {
+    "name": "Uizard"
+  },
+  "data_loaders": {
+    "train_batch_size": 5,
+    "dev_batch_size": 10,
+    "test_batch_size": 10
+  },
+  "model": {
+    "pretrained_model": "sentence-transformers/paraphrase-MiniLM-L6-v2",
+    "pooling_mode": "mean",
+    "dropout_prob": 0.1
+  },
+  "system": {
+    "max_sequence_length": 128
+  },
+  "optimizer": {
+    "type": "Adam",
+    "learning_rate": 5e-4,
+    "learning_rate_top": 5e-4
+  },
+  "trainer": {
+    "num_epochs": 1,
+    "interval": 5
+  },
+  "paths": {
+    "output_dir": "model"
+  }
+}

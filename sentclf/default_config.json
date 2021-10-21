@@ -1,0 +1,50 @@
+{
+  "data": {
+    "dev_ratio": 0.1,
+    "test_ratio": 0.1,
+    "random_states": [
+      null,
+      null
+    ]
+  },
+  "dataset": {
+    "name": "generic"
+  },
+  "data_loaders": {
+    "train_batch_size": 32,
+    "dev_batch_size": 64,
+    "test_batch_size": 64
+  },
+  "model": {
+    "pretrained_model": "allenai/scibert_scivocab_uncased",
+    "pooling_mode": "mean",
+    "dropout_prob": 0.1,
+    "use_extended_features": true
+  },
+  "system": {
+    "max_sequence_length": 128
+  },
+  "optimizer": {
+    "type": "Adam",
+    "learning_rate": 5e-6,
+    "learning_rate_top": 5e-4
+  },
+  "metric": "macro_f1",
+  "trainer": {
+    "num_epochs": 20,
+    "interval": 100,
+    "verbose": true
+  },
+  "seeds": {
+    "py_seed": null,
+    "np_seed": null,
+    "torch_seed": null
+  },
+  "paths": {
+    "output_dir": "model"
+  },
+  "logger": {
+    "format": "%(asctime)s - %(name)s - %(message)s",
+    "level": "INFO"
+  }
+}
