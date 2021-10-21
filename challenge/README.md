@@ -25,4 +25,4 @@ corresponding notebooks.
 I configured to train two models with 1 epoch, but manually stopped training after ~7.000 iterations due to no
 improvement.
 
-The best model in experiment 2 can be found in folder [Uizard_211020_17-13-10](Uizard_211020_17-13-10).
+The best model in experiment 2 can be found in folder [model/Uizard_211020_17-13-10](model/Uizard_211020_17-13-10).
