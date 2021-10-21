@@ -1,0 +1,68 @@
+{
+  "data": {
+    "dev_ratio": 0.1,
+    "test_ratio": 0.1,
+    "random_states": [
+      98237834,
+      124104
+    ]
+  },
+  "dataset": {
+    "name": "Uizard",
+    "labels": [
+      "abstract",
+      "author",
+      "caption",
+      "date",
+      "equation",
+      "figure",
+      "footer",
+      "list",
+      "paragraph",
+      "reference",
+      "section",
+      "table",
+      "title"
+    ]
+  },
+  "data_loaders": {
+    "train_batch_size": 32,
+    "dev_batch_size": 64,
+    "test_batch_size": 64
+  },
+  "model": {
+    "pretrained_model": "allenai/scibert_scivocab_uncased",
+    "pooling_mode": "mean",
+    "dropout_prob": 0.1,
+    "use_extended_features": false,
+    "output_dim": 13
+  },
+  "system": {
+    "max_sequence_length": 128
+  },
+  "optimizer": {
+    "type": "Adam",
+    "learning_rate": 5e-06,
+    "learning_rate_top": 0.0005
+  },
+  "metric": "macro_f1",
+  "trainer": {
+    "num_epochs": 1,
+    "interval": 200,
+    "verbose": true
+  },
+  "seeds": {
+    "py_seed": 3457949362,
+    "np_seed": 1838208394,
+    "torch_seed": 1860170652
+  },
+  "paths": {
+    "output_dir": "model",
+    "experiment_dir": "model/Uizard_211020_17-07-26",
+    "log_dir": "model/Uizard_211020_17-07-26/log"
+  },
+  "logger": {
+    "format": "%(asctime)s - %(name)s - %(message)s",
+    "level": "INFO"
+  }
+}
