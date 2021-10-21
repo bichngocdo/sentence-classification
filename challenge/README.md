@@ -1,4 +1,11 @@
-# Challenge: Experiment Details
+# Challenge
+
+## Running the Solution
+- The main script is [main.py](../main.py).
+- Change the ``DEVICE`` and ``BATCH_SIZE`` variables at the beginning of the script to suit your system.
+- Run the script from its location (the root folder), otherwise please adjust the ``MODEL_DIR``. 
+
+## Experiment Details
 
 Due to time limit, I can only run two experiments:
 

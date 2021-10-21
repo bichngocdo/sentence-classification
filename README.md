@@ -35,7 +35,7 @@ python prepare_data.py train_data SPSC.csv
 Or:
 
 - Create a JSON file of experiment configuration similar to [config.json](config.json). It doesn't need to specify all
-  parameters, the missing ones will get the default value
+  parameters, the missing ones will get their default values
   from [sentclf/default_config.json](sentclf/default_config.json).
 - In an experiment, the data will be split into train/dev/test splits and a model will be trained, evaluated and tested
   on the corresponding dataset.
@@ -87,4 +87,4 @@ Use [SciBERT](https://github.com/allenai/scibert) as the base encoder.
   It can be achieved by:
     - Use bidirectional LSTMs to enrich the sentences of the same paper with context
     - Decode their labels with a CRF layer.
-- Up/down sampling training instances may work better than adjusting the loss weights.
+- Up/down sampling training instances *may* work better than adjusting the loss with label weights.
