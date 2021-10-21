@@ -23,8 +23,9 @@ I chose SciBERT because it was trained on the same domain as the data of this ch
 to ``128`` because of the [data analysis](../analyze_data.ipynb) results that most of the sentences have their lengths
 below this threshold.
 
-Both experiments are performed on the *same* data split with the train/dev/test ratio of 8:1:1. I configured to train
-two models with 1 epoch, but manually stopped training after ~7.000 iterations due to no further improvement.
+Both experiments are performed on the *same* data split with the train/dev/test ratio of 8:1:1. The *label distribution*
+is the same in each dataset. I configured to train two models with 1 epoch, but manually stopped training after ~7.000
+iterations due to no further improvement.
 
 Using extended features (experiment 2) results in higher macro F1 on the test set (~**69**%). The experiment details,
 model hyperparameters, training progress and *detailed results* can be seen in the corresponding notebooks (the Test
